@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0e6655;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container {
+    max-width: 1000px;
+    padding: 40px;
+    background-color: #16a085;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 50px auto; /* Ensures it is properly centered */
+    text-align: center;
+}
+
+h1, h2 {
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color:#000000;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color:#000000;
+}
+
+form {
+    margin-top: 20px;
+    color:#000000;
+}
+
+input {
+    padding: 15px;
+    width: 60%;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    text-align: center;
+    color:#000000;
+}
+
+button {
+    padding: 12px 22px;
+    background-color: #0e6655;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0b5345;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid white;
+    text-align: center;
+    font-size: 16px;
+    color:#000000;
+}
+
+th {
+    background-color: #0e6655;
+}
+
+img {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.classification-report {
+    background-color: #ffffff; /* White background for readability */
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    text-align: left;
+    white-space: pre-wrap;
+    font-family: monospace;
+    color: #000; /* Black text for contrast */
+    border: 2px solid #117a65; /* Green border to match theme */
+    overflow-x: auto; /* Fix for content being cut off */
+    word-wrap: break-word; /* Ensures long words break correctly */
+    max-height: 400px; /* Prevents overflowing */
+    overflow-y: auto;
+
+}
+
+/* Fix for layout issues */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.go-back-button {
+    padding: 12px 22px;
+    background-color: #0e6655;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.go-back-button:hover {
+    background-color: #0b5345;
+}

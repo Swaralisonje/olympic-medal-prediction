@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medal Prediction Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Medal Prediction Results for {{ sport.capitalize() }}</h1>
+
+        <h2>Top 10 Countries & Predicted Medal Percentage</h2>
+        <table>
+            <tr>
+                <th>Country</th>
+                <th>Predicted Medal Percentage</th>
+            </tr>
+            {% for country in countries %}
+            <tr>
+                <td>{{ country['Country'] }}</td>
+                <td>{{ country['Predicted_Percentage'] }}%</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <h2>Predicted Medal Winning Percentage</h2>
+        <img src="{{ url_for('static', filename='prediction_graph.png') }}?{{ timestamp }}" alt="Predicted Medal Percentage Graph">
+
+        <h2>Predicted Medal Percentages by Country</h2>
+        <div>{{ world_map|safe }}</div>
+
+
+
+        <h2>Classification Report</h2>
+        <div class="classification-report">
+            <pre>{{ classification_report }}</pre>
+        </div>
+
+        <button class="go-back-button" onclick="history.back()">Go Back</button>
+    </div>
+</body>
+</html>
