@@ -8,7 +8,7 @@ import plotly.graph_objects as go
 
 
 
-app = Flask(__name__)
+app = Flask(__name__,static_folder="static")
 
 # Load trained model
 with open("rf_model.pkl", "rb") as f:
